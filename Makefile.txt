@@ -1,0 +1,8 @@
+all:
+	g++ -std=c++0x -o cordinator cordinator.cpp -pthread 
+        g++ -std=c++0x -o server server.cpp -pthread 
+        g++ -o client client.cpp 
+
+clean:
+	rm cordinator server client
+
